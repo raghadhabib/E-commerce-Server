@@ -1,4 +1,4 @@
-import type { LocalizedText } from "../data/products";
+import type { LocalizedString } from "../data/products";
 
 type Lang = "en" | "ar";
 
@@ -11,7 +11,7 @@ export function localize<T>(item: T, lang: Lang): unknown {
   if (item === null || typeof item !== "object") return item;
 
   if ("en" in item && "ar" in item && Object.keys(item).length === 2) {
-    return (item as LocalizedText)[lang];
+    return (item as LocalizedString)[lang];
   }
 
   if (Array.isArray(item)) {
