@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
-import { products, type LocalizedString } from "./data/products";
+import type { ParsedQs } from "qs";
+import { products } from "./data/products";
+import { LocalizedString } from "./data/sharedType";
 import { categories } from "./data/categories";
 
 const app = express();
@@ -8,7 +10,15 @@ const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 
-function resolveLang(query: unknown): "en" | "ar" {
+type LocalizedCategory = {
+  id: string;
+  label: string;
+};
+
+//is this good or it's better to just pass it directly like this : (query: string | string[] | undefined) ? what is more readable?
+type QueryValue = string | ParsedQs | (string | ParsedQs)[] | undefined;
+
+function resolveLang(query: QueryValue): "en" | "ar" {
   return query === "ar" ? "ar" : "en";
 }
 
@@ -53,7 +63,7 @@ app.get("/api/products/:id", (req, res) => {
 app.get("/api/categories", (req, res) => {
   const lang = resolveLang(req.query.lang);
 
-  const localizedCategories = categories.map((cat) => ({
+  const localizedCategories: LocalizedCategory[] = categories.map((cat) => ({
     id: cat.id,
     label: localize(cat.label, lang),
   }));

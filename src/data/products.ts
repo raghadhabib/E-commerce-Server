@@ -1,7 +1,4 @@
-export type LocalizedString = {
-  en: string;
-  ar: string;
-};
+import { LocalizedString } from "./sharedType";
 
 export type Product = {
   id: number;

@@ -1,4 +1,4 @@
-import type { LocalizedString } from "./products";
+import type { LocalizedString } from "./sharedType";
 
 export type Category = {
   id: string;

@@ -1,4 +1,4 @@
-import type { LocalizedString } from "../data/products";
+import type { LocalizedString } from "../data/sharedType";
 
 type Lang = "en" | "ar";
 
