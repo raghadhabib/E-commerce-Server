@@ -18,7 +18,7 @@ export const products: Product[] = [
     id: 1,
     category: "clothing",
     price: 120,
-    rating: 4.9,
+    rating: 2,
     reviews: 84,
     inStock: true,
     image:
@@ -26,7 +26,7 @@ export const products: Product[] = [
     tags: ["New"],
     name: {
       en: "Tatreez Embroidered Dress",
-      ar: "فستان مطرز بالتطريز الفلسطيني",
+      ar: "فستان تطريز",
     },
     description: {
       en: "A stunning traditional Palestinian dress with hand-embroidered tatreez patterns.",
@@ -37,7 +37,7 @@ export const products: Product[] = [
     id: 2,
     category: "clothing",
     price: 65,
-    rating: 4.7,
+    rating: 4,
     reviews: 52,
     inStock: true,
     image:
@@ -45,7 +45,7 @@ export const products: Product[] = [
     tags: [],
     name: {
       en: "Tatreez Hoodie",
-      ar: "هودي مطرز",
+      ar: "هودي مطرزة",
     },
     description: {
       en: "A cozy hoodie featuring embroidered tatreez sleeve details.",
@@ -64,7 +64,7 @@ export const products: Product[] = [
     tags: ["Trending"],
     name: {
       en: "Embroidered T-Shirt",
-      ar: "تيشيرت مطرز",
+      ar: "تيشيرت مطرزة",
     },
     description: {
       en: "A minimalist t-shirt with a tatreez embroidery patch on the chest.",
@@ -76,7 +76,7 @@ export const products: Product[] = [
     id: 4,
     category: "accessories",
     price: 30,
-    rating: 4.8,
+    rating: 1,
     reviews: 67,
     inStock: true,
     image:
@@ -95,7 +95,7 @@ export const products: Product[] = [
     id: 5,
     category: "accessories",
     price: 55,
-    rating: 4.5,
+    rating: 2,
     reviews: 28,
     inStock: false,
     image:
@@ -103,7 +103,7 @@ export const products: Product[] = [
     tags: ["Trending"],
     name: {
       en: "Home Clock",
-      ar: "ساعة حائط منزلية",
+      ar: "ساعة حائط بالتطريز",
     },
     description: {
       en: "A handcrafted wall clock decorated with tatreez motifs.",
@@ -123,7 +123,7 @@ export const products: Product[] = [
     tags: ["New"],
     name: {
       en: "Embroidered Tote Bag",
-      ar: "حقيبة توت مطرزة",
+      ar: "حقيبة مطرزة",
     },
     description: {
       en: "A spacious canvas tote bag with bold tatreez embroidery.",
@@ -134,7 +134,7 @@ export const products: Product[] = [
     id: 7,
     category: "bags",
     price: 95,
-    rating: 4.8,
+    rating: 3,
     reviews: 43,
     inStock: true,
     image:
@@ -200,7 +200,7 @@ export const products: Product[] = [
     tags: ["Trending"],
     name: {
       en: "Palestinian Embroidered Tissue Holder",
-      ar: "علبة مناديل مطرزة فلسطينية",
+      ar: "علبة مناديل مطرزة ",
     },
     description: {
       // NOTE: source description talks about a "plate," not a tissue holder — mismatch carried over as-is
