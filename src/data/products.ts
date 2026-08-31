@@ -18,7 +18,7 @@ export const products: Product[] = [
     id: 1,
     category: "clothing",
     price: 120,
-    rating: 2,
+    rating: 5,
     reviews: 84,
     inStock: true,
     image:
@@ -76,7 +76,7 @@ export const products: Product[] = [
     id: 4,
     category: "accessories",
     price: 30,
-    rating: 1,
+    rating: 4.1,
     reviews: 67,
     inStock: true,
     image:
@@ -95,7 +95,7 @@ export const products: Product[] = [
     id: 5,
     category: "accessories",
     price: 55,
-    rating: 2,
+    rating: 4.2,
     reviews: 28,
     inStock: false,
     image:
@@ -134,7 +134,7 @@ export const products: Product[] = [
     id: 7,
     category: "bags",
     price: 95,
-    rating: 3,
+    rating: 4.7,
     reviews: 43,
     inStock: true,
     image:
